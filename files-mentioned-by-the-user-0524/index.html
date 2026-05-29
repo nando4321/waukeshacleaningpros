@@ -295,30 +295,39 @@
 
       <section class="quote-form" id="quote">
         <div class="container">
-          <form class="estimate-card">
+          <form
+            class="estimate-card"
+            action="https://formsubmit.co/fernandojr@waukeshacleaningpros.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="New Waukesha Cleaning Pros estimate request" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://waukeshacleaningpros.com/thank-you.html" />
+            <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" />
             <h2>Get a FREE on-site estimate</h2>
-            <label>Business name <input type="text" placeholder="Business name" /></label>
+            <label>Business name <input type="text" name="business_name" placeholder="Business name" required /></label>
             <div class="form-row">
-              <label>First name <input type="text" placeholder="First name" /></label>
-              <label>Last name <input type="text" placeholder="Last name" /></label>
+              <label>First name <input type="text" name="first_name" placeholder="First name" required /></label>
+              <label>Last name <input type="text" name="last_name" placeholder="Last name" required /></label>
             </div>
-            <label>Address <input type="text" placeholder="Street" /></label>
+            <label>Address <input type="text" name="address" placeholder="Street" /></label>
             <div class="form-row three">
-              <label>City <input type="text" placeholder="City" /></label>
-              <label>State <input type="text" placeholder="State" /></label>
-              <label>Zip <input type="text" placeholder="Zip" /></label>
+              <label>City <input type="text" name="city" placeholder="City" /></label>
+              <label>State <input type="text" name="state" placeholder="State" /></label>
+              <label>Zip <input type="text" name="zip" placeholder="Zip" /></label>
             </div>
             <div class="form-row">
-              <label>Email <input type="email" placeholder="Your email" /></label>
-              <label>Phone <input type="tel" placeholder="Your phone number" /></label>
+              <label>Email <input type="email" name="email" placeholder="Your email" required /></label>
+              <label>Phone <input type="tel" name="phone" placeholder="Your phone number" required /></label>
             </div>
             <div class="form-row">
-              <label>Days per week <input type="number" min="1" max="7" placeholder="e.g. 3" /></label>
-              <label>Square feet of space <input type="number" min="0" placeholder="e.g. 8500" /></label>
+              <label>Days per week <input type="number" name="days_per_week" min="1" max="7" placeholder="e.g. 3" /></label>
+              <label>Square feet of space <input type="number" name="square_feet" min="0" placeholder="e.g. 8500" /></label>
             </div>
             <label>
               Building type
-              <select>
+              <select name="building_type">
                 <option>Select one</option>
                 <option>Office</option>
                 <option>Medical</option>
@@ -328,7 +337,7 @@
               </select>
             </label>
             <label class="checkbox">
-              <input type="checkbox" />
+              <input type="checkbox" name="consent" value="Yes" required />
               By checking this box, I am providing express written consent to receive automated and/or recorded calls, texts, and emails from Waukesha Cleaning Pros.
             </label>
             <button class="button cyan full" type="submit">Submit</button>

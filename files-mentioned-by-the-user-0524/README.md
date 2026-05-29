@@ -33,3 +33,10 @@ Static website for waukeshacleaningpros.com.
 ## Video note
 
 The landing page video is embedded from Vimeo to keep the GitHub/Cloudflare deploy lightweight.
+
+## Form note
+
+The homepage estimate form posts to FormSubmit and sends submissions to
+fernandojr@waukeshacleaningpros.com. The first live form submission may trigger
+a FormSubmit activation email; click the activation link in that inbox to enable
+delivery.
