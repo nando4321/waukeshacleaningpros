@@ -1,0 +1,14 @@
+# Local preview and scratch files
+pdf-reference/
+preview-server.cjs
+
+# Reference-only assets not used by the live site
+assets/janiking-reference.png
+assets/landing-page-architecture.jpg
+assets/waukeshacleaningpros-showcase.mp4
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
