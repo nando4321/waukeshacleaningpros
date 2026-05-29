@@ -497,49 +497,11 @@ iframe {
   font-weight: 900;
 }
 
-.google-review-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.google-review-grid article {
-  min-height: 265px;
-  padding: 28px;
+.trustmary-widget {
+  min-height: 260px;
+  overflow: hidden;
   border-radius: 8px;
   background: #f5f5f5;
-}
-
-.google-review-grid p {
-  margin: 14px 0 20px;
-  color: var(--ink);
-  font-weight: 700;
-}
-
-.google-review-grid strong,
-.google-review-grid span {
-  display: block;
-}
-
-.google-review-grid span {
-  color: var(--muted);
-  font-size: 0.84rem;
-}
-
-.google-review-grid .rating-card {
-  background: var(--cyan);
-  color: var(--white);
-}
-
-.google-review-grid .rating-card strong {
-  color: var(--yellow);
-  font-size: 4rem;
-  line-height: 0.9;
-}
-
-.google-review-grid .rating-card p,
-.google-review-grid .rating-card span {
-  color: var(--white);
 }
 
 .testimonial-band {
@@ -1141,10 +1103,6 @@ iframe {
 
   .type-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .google-review-grid {
-    grid-template-columns: 1fr;
   }
 
   .service-pill-grid {
