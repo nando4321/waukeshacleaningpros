@@ -24,7 +24,7 @@ Static website for waukeshacleaningpros.com.
 - areas-we-serve/: city pages
 - industries-we-serve.html: industry hub
 - industries-we-serve/: industry pages
-- assets/: images, logo, and video
+- assets/: images and logo
 - sitemap.xml: SEO sitemap
 - robots.txt: crawler instructions
 - _headers: Cloudflare Pages security/cache headers
@@ -32,4 +32,4 @@ Static website for waukeshacleaningpros.com.
 
 ## Video note
 
-The landing page video is large. If mobile performance becomes an issue, compress assets/waukeshacleaningpros-vsl.mp4 or host the video through Cloudflare Stream, YouTube, or Vimeo.
+The landing page video is embedded from Vimeo to keep the GitHub/Cloudflare deploy lightweight.

@@ -279,9 +279,11 @@ iframe {
   box-shadow: 0 22px 65px rgba(13, 42, 79, 0.16);
 }
 
-.video-shell video {
+.video-shell iframe {
   width: 100%;
-  max-height: 430px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
   border-radius: 6px;
   background: var(--black);
 }
