@@ -324,13 +324,14 @@ iframe {
 }
 
 .clients-section {
-  padding: 60px 0;
+  overflow: hidden;
+  padding: 70px 0;
   background: var(--white);
   text-align: center;
 }
 
 .clients-label {
-  margin: 0 0 40px;
+  margin: 0 0 10px;
   font-size: 0.74rem;
   font-weight: 900;
   letter-spacing: 0.15em;
@@ -338,22 +339,64 @@ iframe {
   color: var(--muted);
 }
 
-.clients-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 30px;
+.clients-section h2 {
+  margin-bottom: 34px;
+  color: var(--cyan);
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 1.03;
+}
+
+.clients-carousel {
+  position: relative;
+  width: 100%;
+}
+
+.clients-carousel::before,
+.clients-carousel::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  width: min(12vw, 150px);
+  pointer-events: none;
+  content: "";
+}
+
+.clients-carousel::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--white), rgba(255, 255, 255, 0));
+}
+
+.clients-carousel::after {
+  right: 0;
+  background: linear-gradient(270deg, var(--white), rgba(255, 255, 255, 0));
+}
+
+.clients-track {
+  display: flex;
+  width: max-content;
   align-items: center;
+  gap: 24px;
+  animation: client-scroll 38s linear infinite;
+}
+
+.clients-carousel:hover .clients-track {
+  animation-play-state: paused;
 }
 
 .client-logo {
   display: flex;
+  flex: 0 0 220px;
   align-items: center;
   justify-content: center;
-  height: 80px;
-  padding: 16px;
+  height: 98px;
+  padding: 18px;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 12px;
   background: #ffffff;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
 }
 
 .client-logo img {
@@ -361,7 +404,7 @@ iframe {
   max-height: 100%;
   object-fit: contain;
   filter: grayscale(100%);
-  opacity: 0.7;
+  opacity: 0.78;
   transition: all 0.3s ease;
 }
 
@@ -370,21 +413,25 @@ iframe {
   opacity: 1;
 }
 
-.client-logo img.is-missing {
-  display: none;
+@keyframes client-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 12px));
+  }
 }
 
-.client-name {
-  display: none;
-  color: var(--cyan);
-  font-size: 0.88rem;
-  font-weight: 900;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
+@media (prefers-reduced-motion: reduce) {
+  .clients-track {
+    animation: none;
+  }
 
-.client-logo img.is-missing + .client-name {
-  display: block;
+  .clients-carousel {
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
 }
 
 .hero-video-section {
@@ -1593,13 +1640,13 @@ iframe {
     padding: 34px 22px;
   }
 
-  .clients-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 20px;
+  .clients-section {
+    padding: 54px 0;
   }
 
   .client-logo {
-    height: 70px;
+    flex-basis: 180px;
+    height: 82px;
   }
 }
 

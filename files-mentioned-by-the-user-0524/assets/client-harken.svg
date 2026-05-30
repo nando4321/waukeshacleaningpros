@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 96" role="img" aria-labelledby="title desc">
+  <title id="title">Harken</title>
+  <desc id="desc">Harken client logo-style wordmark</desc>
+  <rect width="260" height="96" rx="12" fill="#ffffff"/>
+  <path d="M26 64 48 26l22 38H57l-9-16-9 16H26Z" fill="#e2231a"/>
+  <text x="86" y="59" fill="#0d2a4f" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="900">HARKEN</text>
+</svg>

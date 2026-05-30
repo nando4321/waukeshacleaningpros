@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 96" role="img" aria-labelledby="title desc">
+  <title id="title">DaVita</title>
+  <desc id="desc">DaVita client logo-style wordmark</desc>
+  <rect width="260" height="96" rx="12" fill="#ffffff"/>
+  <path d="M39 25 61 48 39 71 17 48Z" fill="#f28c28"/>
+  <path d="M39 34 52 48 39 62 26 48Z" fill="#ffffff"/>
+  <text x="78" y="57" fill="#005daa" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="900">DaVita</text>
+</svg>

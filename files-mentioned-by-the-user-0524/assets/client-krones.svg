@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 96" role="img" aria-labelledby="title desc">
+  <title id="title">Krones</title>
+  <desc id="desc">Krones client logo-style wordmark</desc>
+  <rect width="260" height="96" rx="12" fill="#ffffff"/>
+  <circle cx="45" cy="48" r="22" fill="#0087c7"/>
+  <path d="M36 36v24M36 48h20M56 36 42 48l14 12" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="82" y="58" fill="#0087c7" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="900">KRONES</text>
+</svg>

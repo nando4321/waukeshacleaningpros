@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 96" role="img" aria-labelledby="title desc">
+  <title id="title">Wilde CDJR</title>
+  <desc id="desc">Wilde Chrysler Dodge Jeep Ram client logo-style wordmark</desc>
+  <rect width="260" height="96" rx="12" fill="#ffffff"/>
+  <path d="M30 30h34l-7 36H23l7-36Z" fill="#0d2a4f"/>
+  <text x="78" y="43" fill="#0d2a4f" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="900">WILDE</text>
+  <text x="78" y="65" fill="#6b7280" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800">CDJR</text>
+</svg>
