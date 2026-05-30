@@ -293,6 +293,10 @@ iframe {
   align-items: center;
   justify-content: center;
   height: 80px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #ffffff;
 }
 
 .client-logo img {
@@ -307,6 +311,23 @@ iframe {
 .client-logo img:hover {
   filter: grayscale(0%);
   opacity: 1;
+}
+
+.client-logo img.is-missing {
+  display: none;
+}
+
+.client-name {
+  display: none;
+  color: var(--cyan);
+  font-size: 0.88rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.client-logo img.is-missing + .client-name {
+  display: block;
 }
 
 .hero-video-section {
