@@ -228,7 +228,7 @@ iframe {
 
 .hero {
   position: relative;
-  min-height: 560px;
+  min-height: 650px;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -320,21 +320,12 @@ iframe {
 }
 
 .clients-label {
-  margin: 0 0 10px;
+  margin: 0 0 34px;
   color: var(--muted);
   font-size: 0.74rem;
   font-weight: 900;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-}
-
-.clients-section h2 {
-  margin-bottom: 34px;
-  color: var(--cyan);
-  font-size: clamp(2rem, 4vw, 3.1rem);
-  font-weight: 900;
-  letter-spacing: -0.055em;
-  line-height: 1.03;
 }
 
 .clients-carousel {
@@ -1590,7 +1581,7 @@ iframe {
   }
 
   .hero {
-    min-height: 510px;
+    min-height: 590px;
   }
 
   .hero h1 {
