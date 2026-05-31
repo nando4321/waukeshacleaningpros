@@ -2606,3 +2606,175 @@ iframe {
     height: 185px;
   }
 }
+
+/* Richer paid-search layout polish */
+.ads-page .ads-hero {
+  position: relative;
+}
+
+.ads-page .ads-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(6, 23, 45, 0.96), rgba(6, 23, 45, 0.9) 42%, rgba(6, 23, 45, 0.68)),
+    url("assets/wcp-team-hero.png") center/cover;
+  opacity: 0.82;
+}
+
+.ads-hero-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 690px;
+  margin-top: 28px;
+}
+
+.ads-hero-proof-grid div {
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+}
+
+.ads-hero-proof-grid strong {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: #071b33;
+  font-size: 0.85rem;
+}
+
+.ads-hero-proof-grid span {
+  display: block;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.ads-hero-proof-grid p {
+  margin: 6px 0 0;
+  color: #c8d3e3;
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.ads-form-after {
+  display: grid;
+  gap: 5px;
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 14px;
+  background: #f3f7fb;
+  border: 1px solid #dfe8f3;
+}
+
+.ads-form-after strong {
+  color: #071b33;
+  font-size: 0.88rem;
+}
+
+.ads-form-after span {
+  color: #64748b;
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.ads-page .ads-pillars article {
+  overflow: hidden;
+}
+
+.ads-page .ads-pillars article::after {
+  content: "";
+  position: absolute;
+  inset: auto -30px -46px auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(255, 214, 0, 0.16);
+}
+
+.ads-page .ads-pillars .ads-icon {
+  position: relative;
+  z-index: 1;
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  background: #071b33;
+  color: var(--yellow);
+}
+
+.ads-icon svg,
+.ads-vertical-grid svg {
+  width: 25px;
+  height: 25px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ads-page .ads-service-cards article {
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ads-page .ads-service-cards article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 34px rgba(15, 23, 42, 0.12);
+}
+
+.ads-page .ads-service-cards div > span {
+  display: inline-flex;
+  margin-bottom: 10px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(0, 115, 177, 0.1);
+  color: var(--blue);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ads-page .ads-vertical-grid div {
+  position: relative;
+  overflow: hidden;
+}
+
+.ads-page .ads-vertical-grid div::after {
+  content: "";
+  position: absolute;
+  inset: auto -24px -34px auto;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background: rgba(0, 115, 177, 0.08);
+}
+
+.ads-page .ads-vertical-grid b {
+  position: relative;
+  z-index: 1;
+}
+
+.ads-page .ads-vertical-grid span {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 760px) {
+  .ads-hero-proof-grid {
+    grid-template-columns: 1fr;
+  }
+}
