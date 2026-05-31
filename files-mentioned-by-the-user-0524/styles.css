@@ -312,17 +312,6 @@ iframe {
   font-size: 0.94rem;
 }
 
-.info-strip {
-  position: relative;
-  z-index: 2;
-  margin-top: -1px;
-  padding: 55px 0 62px;
-  background: var(--cyan);
-  color: var(--white);
-  text-align: center;
-  border-radius: 0 0 50% 50% / 0 0 18% 18%;
-}
-
 .clients-section {
   overflow: hidden;
   padding: 70px 0;
@@ -332,11 +321,11 @@ iframe {
 
 .clients-label {
   margin: 0 0 10px;
+  color: var(--muted);
   font-size: 0.74rem;
   font-weight: 900;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--muted);
 }
 
 .clients-section h2 {
@@ -388,11 +377,11 @@ iframe {
 
 .client-logo {
   display: flex;
-  flex: 0 0 220px;
+  flex: 0 0 260px;
   align-items: center;
   justify-content: center;
   height: 98px;
-  padding: 18px;
+  padding: 20px 28px;
   border: 1px solid var(--line);
   border-radius: 12px;
   background: #ffffff;
@@ -432,6 +421,17 @@ iframe {
     overflow-x: auto;
     padding-bottom: 8px;
   }
+}
+
+.info-strip {
+  position: relative;
+  z-index: 2;
+  margin-top: -1px;
+  padding: 55px 0 62px;
+  background: var(--cyan);
+  color: var(--white);
+  text-align: center;
+  border-radius: 0 0 50% 50% / 0 0 18% 18%;
 }
 
 .hero-video-section {
@@ -1618,6 +1618,15 @@ iframe {
     padding: 16px;
   }
 
+  .clients-section {
+    padding: 54px 0;
+  }
+
+  .client-logo {
+    flex-basis: 220px;
+    height: 82px;
+  }
+
   .type-grid {
     grid-template-columns: 1fr;
   }
@@ -1640,14 +1649,6 @@ iframe {
     padding: 34px 22px;
   }
 
-  .clients-section {
-    padding: 54px 0;
-  }
-
-  .client-logo {
-    flex-basis: 180px;
-    height: 82px;
-  }
 }
 
 /* Pricing page final overrides */
