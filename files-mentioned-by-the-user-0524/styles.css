@@ -2087,6 +2087,14 @@ iframe {
   letter-spacing: -0.05em;
 }
 
+.ads-section-heading > p:not(.ads-eyebrow) {
+  max-width: 720px;
+  margin: 14px auto 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
 .ads-pillars {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -2194,6 +2202,10 @@ iframe {
 
 .ads-reviews .ads-section-heading h2 {
   color: #ffffff;
+}
+
+.ads-reviews .ads-section-heading > p:not(.ads-eyebrow) {
+  color: #c8d3e3;
 }
 
 .ads-trustmary {
