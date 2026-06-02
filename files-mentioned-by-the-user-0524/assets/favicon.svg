@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Waukesha Cleaning Pros">
+  <rect width="64" height="64" rx="14" fill="#0d2a4f"/>
+  <path d="M12 46V29l7-5v22h-7Z" fill="#ffffff"/>
+  <path d="M23 46V14h7v32h-7Z" fill="#ffffff"/>
+  <path d="M34 46V18l7 5v23h-7Z" fill="#ffffff"/>
+  <path d="M45 46V28l7 5v13h-7Z" fill="#ffffff"/>
+  <path d="M12 50h40v4H12v-4Z" fill="#f6dd00"/>
+</svg>
