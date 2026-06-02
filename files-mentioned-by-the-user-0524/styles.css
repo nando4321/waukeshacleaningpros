@@ -496,7 +496,6 @@ iframe {
 .copy-panel h2,
 .market-copy h2,
 .building-types h2,
-.owned-band h2,
 .why h2,
 .custom-copy h2,
 .map-band h2 {
@@ -598,20 +597,6 @@ iframe {
   font-size: 0.72rem;
   font-weight: 900;
   text-transform: uppercase;
-}
-
-.owned-band {
-  padding: 85px 0;
-  background: var(--black);
-  color: var(--white);
-  text-align: center;
-}
-
-.owned-band h2 {
-  max-width: 680px;
-  margin: 0 auto 24px;
-  color: var(--white);
-  font-size: clamp(2rem, 4vw, 3rem);
 }
 
 .google-reviews {
