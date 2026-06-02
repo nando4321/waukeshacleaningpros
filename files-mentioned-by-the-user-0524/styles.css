@@ -1,5 +1,6 @@
 :root {
   --cyan: #0d2a4f;
+  --navy: #0d2a4f;
   --cyan-dark: #071b34;
   --yellow: #f6dd00;
   --black: #242424;
@@ -1973,7 +1974,7 @@ iframe {
 .homepage-seo-links .container {
   padding: 38px;
   border-radius: 18px;
-  background: var(--navy);
+  background: var(--cyan);
   color: var(--white);
   box-shadow: 0 22px 60px rgba(13, 42, 79, 0.14);
 }
