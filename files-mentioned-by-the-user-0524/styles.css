@@ -658,8 +658,8 @@ iframe {
 }
 
 .trustmary-widget {
-  min-height: 260px;
-  overflow: hidden;
+  min-height: 360px;
+  overflow: visible;
   border-radius: 8px;
   background: #f5f5f5;
 }
@@ -1923,21 +1923,21 @@ iframe {
 }
 
 .seo-reviews-block {
-  background: var(--navy);
-  color: var(--white);
+  background: var(--white);
+  color: var(--ink);
 }
 
 .seo-reviews-block h2,
 .seo-reviews-block .kicker {
-  color: var(--white);
+  color: var(--ink);
 }
 
 .seo-reviews-block p {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--muted);
 }
 
 .seo-reviews-block .trustmary-widget {
-  background: var(--white);
+  background: #f5f5f5;
 }
 
 .seo-short-form {
