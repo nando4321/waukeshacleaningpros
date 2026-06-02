@@ -547,7 +547,7 @@ iframe {
 }
 
 .building-types {
-  padding: 80px 0 105px;
+  padding: 80px 0 46px;
 }
 
 .centered {
@@ -600,7 +600,7 @@ iframe {
 }
 
 .google-reviews {
-  padding: 88px 0;
+  padding: 52px 0 88px;
   background: var(--white);
 }
 
