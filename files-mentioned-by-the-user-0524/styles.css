@@ -1965,9 +1965,17 @@ iframe {
 }
 
 .homepage-seo-links {
-  padding: 46px 0 52px;
+  padding: 46px 0;
+  background: var(--white);
+  color: var(--ink);
+}
+
+.homepage-seo-links .container {
+  padding: 38px;
+  border-radius: 18px;
   background: var(--navy);
   color: var(--white);
+  box-shadow: 0 22px 60px rgba(13, 42, 79, 0.14);
 }
 
 .homepage-seo-links .area-section-heading {
@@ -2060,6 +2068,11 @@ iframe {
 }
 
 @media (max-width: 620px) {
+  .homepage-seo-links .container {
+    padding: 28px 20px;
+    border-radius: 0;
+  }
+
   .seo-link-grid {
     grid-template-columns: 1fr;
   }
