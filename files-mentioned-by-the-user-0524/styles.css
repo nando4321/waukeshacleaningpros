@@ -2077,4 +2077,94 @@ iframe {
   .seo-link-grid {
     grid-template-columns: 1fr;
   }
+
+  .pricing-hero {
+    padding: 56px 0 48px;
+  }
+
+  .pricing-hero-grid,
+  .pricing-intro-grid,
+  .pricing-layout,
+  .pricing-methods,
+  .project-price-grid,
+  .pricing-factor-grid,
+  .pricing-checklist {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .pricing-hero h1 {
+    font-size: clamp(2.15rem, 13vw, 3rem);
+    letter-spacing: -0.06em;
+  }
+
+  .pricing-hero p {
+    font-size: 1rem;
+  }
+
+  .pricing-hero .hero-actions {
+    align-items: stretch;
+  }
+
+  .pricing-hero .hero-actions .button {
+    width: 100%;
+  }
+
+  .pricing-summary,
+  .pricing-card-section,
+  .pricing-warning,
+  .pricing-sticky-card,
+  .pricing-methods article {
+    padding: 22px;
+    border-radius: 12px;
+  }
+
+  .pricing-content,
+  .pricing-band,
+  .pricing-intro {
+    padding: 44px 0;
+  }
+
+  .pricing-article {
+    gap: 20px;
+  }
+
+  .pricing-section-heading,
+  .pricing-section-heading.left {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .pricing-intro h2,
+  .pricing-section-heading h2,
+  .pricing-article h2,
+  .pricing-warning h2 {
+    font-size: clamp(1.75rem, 10vw, 2.35rem);
+  }
+
+  .table-wrap {
+    margin-right: -14px;
+    margin-left: -14px;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+  }
+
+  .pricing-article table {
+    min-width: 620px;
+  }
+
+  .pricing-article th,
+  .pricing-article td {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .pricing-checklist li {
+    min-height: auto;
+  }
+
+  .pricing-sidebar {
+    position: static;
+  }
 }
