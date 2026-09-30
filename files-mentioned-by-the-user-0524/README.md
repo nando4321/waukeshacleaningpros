@@ -36,7 +36,19 @@ The landing page video is embedded from Vimeo to keep the GitHub/Cloudflare depl
 
 ## Form note
 
-The homepage estimate form posts to FormSubmit and sends submissions to
-fernandojr@waukeshacleaningpros.com. The first live form submission may trigger
-a FormSubmit activation email; click the activation link in that inbox to enable
-delivery.
+All 18 estimate and walkthrough forms use Web3Forms and deliver to
+fernandojr@waukeshacleaningpros.com. The access key in the HTML is intentionally
+public. Manage recipients in the Web3Forms dashboard for Waukesha Cleaning Pros.
+
+JavaScript redirects to /thank-you.html only after a confirmed successful
+submission. Server errors, rejected responses, network failures, and timeouts
+preserve the customer's entries and show a retry/call message. Duplicate submits
+are blocked while a request is pending. The native HTML form works without JS.
+
+## Form regression tests
+
+Install Python and Playwright; the tests currently launch Brave from
+/usr/bin/brave-browser-stable. Run `python tests/test_quote_forms.py` from this
+folder. Browser tests intercept provider requests; they do not send real emails.
+The suite exercises all 18 forms plus success, failure, validation, pending-submit,
+and timeout behavior.

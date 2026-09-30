@@ -62,3 +62,56 @@ if (frequency) {
 if (calculator) {
   calculator.addEventListener("submit", calculateImpact);
 }
+
+// ---------- Quote submission (native HTML remains a no-JS fallback) ----------
+  document.querySelectorAll('form.estimate-card, form.seo-short-form').forEach(function (form) {
+    if (!window.fetch || !window.FormData || !window.AbortController) return;
+    var button = form.querySelector('button[type="submit"]');
+    var originalText = button.textContent;
+    var busy = false;
+    var status = document.createElement('p');
+    status.className = 'form-status';
+    status.setAttribute('role', 'status');
+    status.setAttribute('aria-live', 'polite');
+    form.appendChild(status);
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (busy || !form.reportValidity()) return;
+      var data = new FormData(form);
+      var payload = {};
+      data.forEach(function (value, key) { payload[key] = value; });
+      // Redirect ourselves only after a confirmed API success, never on failure.
+      delete payload.redirect;
+      if (payload.botcheck) return;
+      busy = true;
+      button.disabled = true;
+      button.textContent = 'Sending…';
+      form.setAttribute('aria-busy', 'true');
+      status.textContent = 'Sending your quote request…';
+      var controller = new AbortController();
+      var timer = setTimeout(function () { controller.abort(); }, 20000);
+
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload),
+        signal: controller.signal
+      }).then(function (response) {
+        if (!response.ok) throw new Error('Submission service unavailable');
+        return response.json();
+      }).then(function (result) {
+        if (result.success !== true) throw new Error('Submission was not accepted');
+        status.textContent = 'Your quote request was sent successfully.';
+        window.location.assign('/thank-you.html');
+      }).catch(function () {
+        status.textContent = 'We could not confirm that your request was sent. Your details are still here. Please try again, or call (414) 367-7289.';
+      }).finally(function () {
+        clearTimeout(timer);
+        busy = false;
+        button.disabled = false;
+        button.textContent = originalText;
+        form.removeAttribute('aria-busy');
+      });
+    });
+  });
